@@ -7,11 +7,8 @@
 
   <body>
   	
-  	<div id="background"></div>
-
-  	<!--put the name of the business below-->
+  	<!--put the name of the <button></button>siness below-->
   	<div id="title"><p>Buis Beef</p></div>
-
   	<div id="runoffReport">
           <table>
             <table style="width:100%">
@@ -30,7 +27,7 @@
               </tr>
                <tr>
                 <td id="A4">website</td>
-                <td id="B4"></td>
+                <td id="B4"><p><a href="https://www.w3schools.com/html/html_links.asp">Click here</a></p></td>
               </tr>
               </tr>
                <tr>
@@ -48,11 +45,41 @@
          //put rating here
          document.getElementById('B3').innerHTML = "Customer Rating"
          //Pust website here
-         document.getElementById('B4').innerHTML = "link to website"
+        // document.getElementById('B4').innerHTML = "link to website"
          //filters
-         document.getElementById('B5').innerHTML = "filters types"
-         
+         //document.getElementById('B5').innerHTML = "clickhere"
      </script>
 
+      <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+
+        ///////////////////////////////////LATITUDE AND LONGITUDE OF BUSINESS GOES HERE////////////////
+        const uluru = { lat: -25.344, lng: 131.036 };
+        //////////////////////////////////////////////////////////////////////////////////////////////
+
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfe9ewy_s7jTP6_sBzgwRONuiWQX004TU&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
