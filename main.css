@@ -1,0 +1,47 @@
+#background{
+	width: 2000px; 
+	height: 1400px; 
+	background-color: #42f5a4;
+}
+
+#title{
+	position: absolute;
+	text-align: center;
+	top: 50px; 
+	right: 250px; 
+	width:800px; 
+	height: 150px; 
+	background-color: #00f;
+	font-size: 50px;
+}
+
+#runoffReport{
+position: absolute;
+top: 250px; 
+right: 700px; 
+width: 600px; 
+height: 250px;
+padding: 10px; 
+z-index: 400;
+background-color: #fff;
+font-size: 20px;
+white-space: normal;
+}
+
+table {
+	width: 400px;
+	/*border-spacing: 40px;*/
+}
+
+th {
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
